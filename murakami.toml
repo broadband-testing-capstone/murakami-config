@@ -47,7 +47,7 @@ connection-type = "wired"
   #
   [exporters.local]
   type = "local"
-  enabled = true
+  enabled = false
   path = "/data/"
 
   # The 'scp' exporter defines a remote server where data should be copied.
@@ -69,10 +69,10 @@ connection-type = "wired"
   #
   [exporters.gcs]
   type = "gcs"
-  enabled = false
-  target = "gs://your-gcs-bucket/"
-  service_account = "service-account-name@your-project.iam.gserviceaccount.com"
-  key = "/murakami/configs/your-service-account-keyfile.json"
+  enabled = true
+  target = "gs://better-broadband-monitoring-logs/"
+  service_account = "monitors@better-broadband.iam.gserviceaccount.com"
+  key = "/murakami/configs/service-account-keyfile.json"
 
   # Below is an example of exporting to a second GCS bucket.
   #[exporters.gcs2]

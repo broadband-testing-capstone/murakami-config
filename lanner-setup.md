@@ -13,7 +13,8 @@ Precondition: Lanner is turned off and connected via the management port to a ma
     * `console=ttyS0,115200n8`
 6. Press `ctrl+X` to boot into the Ubuntu installer
 7. Install the minimified version of the OS -- this will save space
-8. Use username `TODO` and password `TODO`
+8. When prompted about disk setup, deselect the option to use LVM
+9. Use username `TODO` and password `TODO`
 
 ## Docker installation
 

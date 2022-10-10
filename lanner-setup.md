@@ -36,7 +36,7 @@ Precondition: Ubuntu 20.04 is set up, network is attached, Docker is installed
 3. Put those two files in any arbitrary directory, we'll call it `/config`
 4. Start the docker container using the following config:
 ```
-sudo docker run -d --restart always --network host --volume /config:/murakami/configs/ measurementlab/murakami:latest -c /murakami/configs/murakami.toml
+sudo docker run -d --restart always --network host --volume /home/$username/config:/murakami/configs/ measurementlab/murakami:latest -c /murakami/configs/murakami.toml
 ```
 5. Check the docker logs to make sure authentication of the first test is successful
 ```

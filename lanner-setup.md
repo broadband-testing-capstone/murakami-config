@@ -3,9 +3,9 @@
 ## OS installation
 Usefull links:
 
-Rufus (to create ubuntu install media) `https://rufus.ie/en/`
-Ubuntu server (the OS we will be installing) `https://ubuntu.com/download/server`
-Putty (assists in comunication over a com port) `https://www.putty.org/`
+Rufus (to create ubuntu install media) `https://rufus.ie/en/`.
+Ubuntu server (the OS we will be installing) `https://ubuntu.com/download/server`.
+Putty (assists in comunication over a com port) `https://www.putty.org/`.
 
 Precondition: Lanner is turned off and connected via the management port to a machine with telnet/PuTTY installed
 

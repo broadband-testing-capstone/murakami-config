@@ -2,10 +2,10 @@
 
 Usefull links:
 
-Rufus (to create ubuntu install media) `https://rufus.ie/en/`.
-Ubuntu server (the OS we will be installing) `https://ubuntu.com/download/server`.
-Putty (assists in comunication over a com port) `https://www.putty.org/`.
-Murakami's Git `https://github.com/m-lab/murakami`
+1. Rufus (to create ubuntu install media) `https://rufus.ie/en/`.
+2. Ubuntu server (the OS we will be installing) `https://ubuntu.com/download/server`.
+3. Putty (assists in comunication over a com port) `https://www.putty.org/`.
+4. Murakami's Git `https://github.com/m-lab/murakami`
 
 
 ## OS installation

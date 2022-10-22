@@ -24,7 +24,7 @@ Precondition: Ubuntu 20.04 is set up and a network cable is plugged into the dev
 2. Install `curl` from apt using `sudo apt update && sudo apt install curl`
 3. Use the convenience script to install Docker
 ```
-$ curl -fsSL https://get.docker.com | sudo sh -
+curl -fsSL https://get.docker.com | sudo sh -
 ```
 
 ## Murakami setup
@@ -39,8 +39,10 @@ Precondition: Ubuntu 20.04 is set up, network is attached, Docker is installed
 pscp C:\pathToFile\service-account-keyfile.json DeviceName@deviceIp:service-account-keyfile.json
 pscp C:\pathToFile\murakami.toml DeviceName@deviceIp:murakami.toml
 ```
-5. Put those two files in any arbitrary directory, we'll call it `/config`
-6. Start the docker container using the following config:
+5. Both files should now be on the device, return to using putty where you can confirm their presencewith the the `dir` command 
+6. Create a folder called config using the command `mkdir config"
+7. move the files into the folder using the commands `mv service-account-keyfile.json config` and ` mv murakami.toml config`
+8. Start the docker container using the following config:
 ```
 sudo docker run -d --restart always --network host --volume /home/$username/config:/murakami/configs/ measurementlab/murakami:latest -c /murakami/configs/murakami.toml
 ```

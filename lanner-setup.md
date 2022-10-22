@@ -31,10 +31,16 @@ $ curl -fsSL https://get.docker.com | sudo sh -
 
 Precondition: Ubuntu 20.04 is set up, network is attached, Docker is installed
 
-1. Pull down the murakami.toml from github.com/Better-Broadband/murakami-config.git. Name it `murakami.toml`.
+1. Download the murakami.toml from github.com/Better-Broadband/murakami-config.git. Name it `murakami.toml`.
 2. Get the service account keyfile from GCP for the `monitors` service account. Name it `service-account-keyfile.json`.
-3. Put those two files in any arbitrary directory, we'll call it `/config`
-4. Start the docker container using the following config:
+3. connected to the device via putty use `ip a` and then search for the ip address, generally something similar to 192.168.0.4
+4. open a Cmd prompt on your computer and use the following 2 commands to move the murakami.toml and the service account keyfile to the device
+```
+pscp C:\pathToFile\service-account-keyfile.json DeviceName@deviceIp:service-account-keyfile.json
+pscp C:\pathToFile\murakami.toml DeviceName@deviceIp:murakami.toml
+```
+5. Put those two files in any arbitrary directory, we'll call it `/config`
+6. Start the docker container using the following config:
 ```
 sudo docker run -d --restart always --network host --volume /home/$username/config:/murakami/configs/ measurementlab/murakami:latest -c /murakami/configs/murakami.toml
 ```

@@ -1,3 +1,3 @@
 # murakami-config
 
-Bash scripts for murakami docker containers.
+Shell scripts for murakami docker containers.

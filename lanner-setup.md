@@ -41,7 +41,7 @@ curl -fsSL https://get.docker.com | sudo sh -
 Precondition: Ubuntu 20.04 is set up, network is attached, Docker is installed
 
 1. Download the murakami.toml from github.com/Better-Broadband/murakami-config.git. Name it `murakami.toml`.
-2. Get the service account keyfile from GCP for the `monitors` service account. Name it `service-account-keyfile.json`.
+2. Get the service account keyfile from GCP for the service account. Name it `service-account-keyfile.json`.
 3. connected to the device via putty use `ip a` and then search for the ip address, generally something similar to 192.168.0.4
 4. open a Cmd prompt on your computer and use the following 2 commands to move the murakami.toml and the service account keyfile to the device
 ```
